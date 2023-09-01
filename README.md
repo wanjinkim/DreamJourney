@@ -60,6 +60,7 @@ Spring을 활용한 웹 프로젝트 구현
 
 ### 담당업무
 - 메인화면 설계
+- 회원가입
 - 커뮤니티 게시판(등록, 수정, 삭제)
 - 커뮤니티 게시판 댓글(댓글 등록, 수정, 삭제)
 ---
@@ -71,26 +72,42 @@ Spring을 활용한 웹 프로젝트 구현
 - **예약/예매** : 교통, 숙소, 액티비티
 - **추천여행지** : 지역
 - **커뮤니티** : 베스트 여행기, 소통해요
-- **Contact** : 고객센터
+- **Contact** : 고객센터<br>
 ![드림저니 메인화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/dc45ddff-b0a6-4c5c-b969-d3cd8d79f5d9)
 
+### 2. 회원가입 ⬇️
+- 닉네임, 전화번호, 이메일 등 중복검사를 포함한 인증번호 유효성 검사를 통과해야만 가입된다.
+- 미성년자는 가입할 수 없다.
+- 가입시 입력한 이름과, 전화번호 인증하는 사람의 이름이 같아야 가입을 할 수 있다.<br><br>
+![회원가입 폼](https://github.com/wanjinkim/DreamJourney/assets/45139754/681ff172-7d1c-4e9e-8a00-6c661efcf007)
 
 
-### 2. 게시판 ⬇️
-- 비회원은 입주상담 글을 등록, 조회, 수정, 삭제할 수 있다. 
-- 비회원이 글을 작성하려면 이름과 전화번호를 입력받는다.
-- **입력받은 정보와 일치하는 글만 조회, 수정, 삭제** 할 수 있다.
-- 문의글에 관리자가 답변을 등록하고, 해당 글에는 **[답변완료]** 표시를 한다.
-![4-2  비회원 입주상담](https://github.com/wanjinkim/NeulBom/assets/45139754/e45c4ad4-09f8-46b3-8cd7-9a925777c9e5)
-![4-1  비회원 입주상담](https://github.com/wanjinkim/NeulBom/assets/45139754/c8c803e1-ffcd-4f64-a073-77681fc77556)
+
+### 3. 게시판 ⬇️
+- 회원은 커뮤니티 게시판에 글을 등록, 조회, 수정, 삭제할 수 있다.
+- 댓글 작성자만이 본인의 댓글을 수정, 삭제 할 수 있다.
+- 동행 카테고리의 게시글에서는 채팅을 이용할 수 있다.<br><br>
+![커뮤니티_글목록_1](https://github.com/wanjinkim/DreamJourney/assets/45139754/0883cd96-795e-4c0f-902a-2c8d47903a63)
+![커뮤니티_글목록_2](https://github.com/wanjinkim/DreamJourney/assets/45139754/2cc3b2c9-f5de-465d-98e3-8e78448d5b4b)
+![커뮤니티_게시글_댓글목록](https://github.com/wanjinkim/DreamJourney/assets/45139754/367b6b75-a9d0-42e9-a3d9-ea7cb3f17153)
+![커뮤니티_동행채팅_회원1](https://github.com/wanjinkim/DreamJourney/assets/45139754/35191564-cc01-4e38-898c-00bd0ac0fce6)
 
 
-### 3. 관리자 - 재무관리 ⬇️
-- chart.js를 사용하여 DB의 데이터와 연동된 차트를 출력한다.
-- **원형차트** : 실버타운 입주자, 요양원 입주자 수를 표시
-- **라인차트** : 최근 5개월 간의 지출 총액을 표시
-- **최근지출내역** : 최근 10건의 지출 항목과 금액 등, 총 지출액 표시 
-![3  재무관리](https://github.com/0hsoyeop/TW-Library/assets/131536077/9fc98612-c5a1-4078-a735-4b691446c4b2)
+### 4. 결제 ⬇️
+- 원하는 액티비티를 선택한 후, 결제할 수 있다.<br><br>
+![액티비티](https://github.com/wanjinkim/DreamJourney/assets/45139754/012c0f6a-a7ed-4e16-9e89-c7da42393339)
+![액티비티_상세보기1](https://github.com/wanjinkim/DreamJourney/assets/45139754/039e35d0-80fb-4420-82e7-268ea6ad87bb)
+![액티비티_상세보기2](https://github.com/wanjinkim/DreamJourney/assets/45139754/d5ce0c12-4849-46e9-92e7-2758e4a47a5f)
+![결제](https://github.com/wanjinkim/DreamJourney/assets/45139754/128d0a56-53fa-4c48-af9b-d3c7303400bb)
+![결제 전체화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/de7c6e9a-f18d-47b2-97ca-bad025d6162e)
+![이니시스](https://github.com/wanjinkim/DreamJourney/assets/45139754/8ab55a76-8df4-41bf-b36a-c0487284c290)
+![결제완료](https://github.com/wanjinkim/DreamJourney/assets/45139754/57d4b6fb-215a-4972-b5c4-0b51b14b2d9e)
+
+### 5. 여행후기 작성
+- 위치와 코멘트를 추가해야만 작성을 완료할 수 있다.
+![마이페이지_내 여행_여행 등록 (4)](https://github.com/wanjinkim/DreamJourney/assets/45139754/3201c57b-104b-4c38-8f1e-50146853f27e)
+![마이페이지_내 여행](https://github.com/wanjinkim/DreamJourney/assets/45139754/ae7c4aad-108b-4e79-bd38-00c65cafdb4f)
+
 
 ---
 ## 개발 스토리
