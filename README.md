@@ -3,12 +3,12 @@
 Spring을 활용한 웹 프로젝트 구현
 
 ### 목적
-- 교통, 숙소, 액티비티 예약 및 예매 서비스 제공, 사용자가 원하는 조건에 따라 해당하는
-   교통, 숙소, 액티비티 결과 조회 등 여러 서비스를 제공한다.
+- 교통, 숙소, 액티비티 예약 및 예매 서비스 제공, 사용자가 원하는 조건에 따라<br>해당하는 교통, 숙소, 액티비티 결과 조회 등 여러 서비스를 제공한다.
   
 ### 사용언어 & 사용기술
 <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" />  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/>
-<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white"/>  <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"/>  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white"/>   <img src="https://img.shields.io/badge/Chart.js-FF6384?style=flat&logo=chart.js&logoColor=white"/> <img src="https://img.shields.io/badge/Ajax-green?style=flat&logo=jquery&logoColor=white"/>  <img src="https://img.shields.io/badge/FlatPickr-blue?style=flat&logo=flatpickr&logoColor=white"/> <img src="https://img.shields.io/badge/RESTfulApi-yellow?style=flat&logo=restfulapi&logoColor=white"/> <img src="https://img.shields.io/badge/spring-green?style=flat&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white"/>  <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"/><br>
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white"/>   <img src="https://img.shields.io/badge/Chart.js-FF6384?style=flat&logo=chart.js&logoColor=white"/> <img src="https://img.shields.io/badge/Ajax-green?style=flat&logo=jquery&logoColor=white"/>  <img src="https://img.shields.io/badge/FlatPickr-blue?style=flat&logo=flatpickr&logoColor=white"/> <img src="https://img.shields.io/badge/RESTfulApi-yellow?style=flat&logo=restfulapi&logoColor=white"/> <img src="https://img.shields.io/badge/spring-green?style=flat&logo=spring&logoColor=white"/> <img src="https://img.shields.io/badge/Mybatis-black?style=flat&logo=mybatis&logoColor=white"/>
 
 ### 개발도구
 <img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat&logo=eclipseide&logoColor=white"/>  <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>  <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=white"/>  <img src="https://img.shields.io/badge/Sourcetree-0052CC?style=flat&logo=sourcetree&logoColor=white"/> <img src="https://img.shields.io/badge/Git-orange?style=flat&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/Github-navy?style=flat&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/Exerd-red?style=flat&logo=exerd&logoColor=white"/> 
@@ -21,11 +21,11 @@ Spring을 활용한 웹 프로젝트 구현
   </tr>
   <tr>
     <td>Language</td>
-    <td>Java(OpenJDK 11.0.1), Oracle, HTML/CSS, JavaScript</td>
+    <td>Java(OracleJDK 11.0.18), Oracle, HTML/CSS, JavaScript</td>
   </tr>
   <tr>
     <td>IDE</td>
-    <td>SQL Developer, Exerd, Eclipse IDE 2021-03, Visual Studio Code, Source Tree</td>
+    <td>SQL Developer, Exerd, STS 3.9.18, Visual Studio Code, Source Tree</td>
   </tr>
   <tr>
     <td>DB</td>
@@ -33,11 +33,15 @@ Spring을 활용한 웹 프로젝트 구현
   </tr>
   <tr>
     <td>Server</td>
-    <td>Apache Tomcat 8</td>
+    <td>Apache Tomcat 9</td>
   </tr>
   <tr>
     <td>API, Library</td>
-    <td>REST API(Kakao Map API, Daum Postcode API), jQuery, Chart.js, Flatpickr</td>
+    <td> REST API(Kakao Map API, Daum Postcode API, Iamport API, Kakao Login API), JavaMail API, jQuery, Chart.js, Flatpickr, Datetimepicker</td>
+  </tr>
+  <tr>
+    <td>FrameWork</td>
+    <td>Spring, Mybatis 3.5.2</td>
   </tr>
   <tr>
     <td>ETC</td>
@@ -46,32 +50,30 @@ Spring을 활용한 웹 프로젝트 구현
 </table>
 
 ### 개요
-1. 사용자는 관리자, 입주자, 보호자, 비회원으로 구분한다.
-2. 관리자 그룹웨어와 입주자/보호자/비회원 클라이언트 페이지를 구분하여 제공한다.
-3. 관리자는 계정 관리자, 일반 관리자, 그 외 직원으로 구분하고 권한별로 기능 접근 권한을 다르게 한다.
+여행과 관련된 기능을 제공하는 웹사이트로, 교통수단, 숙소, 액티비티 결제가 가능합니다.<Br>
+또한, 소셜 기능을 통해 여행 공유가 가능하여 사용자들이 서로 정보를 공유하고<br>
+계획을 세우는 기능을 제공함으로써 이용자에게 다양한 경험을 주는 것을 목표로 하였습니다.<br>
 
 ### 데이터 구조
-![늘봄ERD(수정_0608_pm11 34)](https://github.com/wanjinkim/NeulBom/assets/45139754/41332e30-940f-493e-88aa-6f82a7df1fc4)
+![드림저니구조](https://github.com/wanjinkim/DreamJourney/assets/45139754/7b8412d4-0faa-4e67-8223-80fbdb3a804c)
 
 
 ### 담당업무
 - 메인화면 설계
-- 회원가입
-- 입주상담 게시판(조회, 등록, 수정, 삭제, 검색) 
+- 커뮤니티 게시판(등록, 수정, 삭제)
+- 커뮤니티 게시판 댓글(댓글 등록, 수정, 삭제)
 ---
 ### 화면구성
 ### 1. 메인화면 ⬇️
 - header, 갤러리, footer로 이루어져있다.
 - 메인 화면의 '로그인' 버튼을 클릭하여 로그인 페이지로 이동한다.
-- 로그인은 '직원, 입주자, 보호자'로 구분하여 처리한다.
+- 베스트 숙소, 베스트 액티비티, 드림저니 인기여행기 등은 모두 동적으로 처리된다.
+- **예약/예매** : 교통, 숙소, 액티비티
+- **추천여행지** : 지역
+- **커뮤니티** : 베스트 여행기, 소통해요
+- **Contact** : 고객센터
+![드림저니 메인화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/dc45ddff-b0a6-4c5c-b969-d3cd8d79f5d9)
 
-- **늘봄 소개** : 인사말, 시설소개, 오시는길
-- **입주안내**
-- **알림게시판** : 공지사항, 식단표, 생활게시판
-- **커뮤니티** : 입주상담, 문의게시판, 자유게시판
-![1-1  메인화면](https://github.com/wanjinkim/NeulBom/assets/45139754/a71069e2-3d11-4417-b913-081e4ed2c776)
-![1-2  메인화면](https://github.com/wanjinkim/NeulBom/assets/45139754/68a77a32-b4b2-4683-b84a-906945621606)
-![1-3  메인화면](https://github.com/wanjinkim/NeulBom/assets/45139754/022e7cd0-9885-4565-a476-80d535215afe)
 
 
 ### 2. 게시판 ⬇️
@@ -95,21 +97,21 @@ Spring을 활용한 웹 프로젝트 구현
 ### 회고
 <table>
     <tr>
-        <td>💡 기능구현 만큼 중요한 의견 통일, 코드 병합</td>
+        <td>💡 프레임워크, API의 적극적인 사용 전과 후의 결과물의 퀄리티 차이는 뚜렷하다.
+</td>
     </tr>
 </table>
-Servlet/JSP를 활용한 동적인 웹 페이지를 구현하는데 필요한 알고리즘이나 기능 구현에 어려움을 느끼긴 했으나, 
-CRUD 기능을 수행하면서 이론 수업 진행 시 다소 헷갈렸던 doGet, doPost 방식의 데이터 전송 프로세스 및 
-DB와의 연계 기능 특히 DAO, DTO, 웹 페이지 간 데이터를 주고받는 방법과 웹 페이지를 구현하는 과정에 대한 
-이해도가 높아졌고 각자 목표로 한 기능들을 성공적으로 구현하였습니다.
+DI, IoC, AOP 등 처음 접하는 개념과 dependency 관리, 데이터베이스 설정 등 설정해야 하는 것들이 많아 
+환경설정부터 쉽지 않았으나, 스프링의 특징에 점점 익숙해지면서 어노테이션을 활용한 URL 매핑(@GetMapping, @PostMapping)을 
+사용하여 간단하게 컨트롤러의 메서드를 매핑하고 요청을 처리할 수 있었습니다.
 
-그러나 문제는 의외의 곳에서 발생하였습니다, 프로젝트 초반 같은 기능을 목표로 하였으나, 
-서로 생각하는 순서도, 기능 세부 조항이 다르다 보니 만들고 나서 서로의 기능이 얽혀있는 것이 아닌
-따로따로 돌아가는 방식으로 구현되어 의견 통일을 하고 웹 페이지의 기능들을 통일하는 데 어려움을 겪었으며,
+또한, JDBC가 아닌 Mybatis를 사용함으로써 SQL과 자바 코드를 분리할 수 있어 가독성이 높아지고, 쿼리를 변경하기도 용이했습니다. 
+'#{}' 형태로 파라미터를 쉽게 바인딩 할 수 있다는 것도 큰 장점이었습니다. 이를 통해 DB와의 연동이 더욱 효율적이고 쉬워졌습니다.
 
-코드 병합 시 관리자 기능과 클라이언트 기능의 git 시작 시점이 달라 브랜치를 병합할 때 코드 일부가 충돌하거나 
-이미 작업했던 코드가 사라지는 시행착오가 있었습니다. 이를 해결하기 위해 checkout으로 이전 코드를 가져와
-손상된 파일을 다시 원래대로 복원하는 과정을 거쳤습니다.
+마지막으로, 의존성 주입 기능을 활용하면서 객체 생성과 관리의 편리함을 느꼈습니다.  @Autowired 어노테이션을 활용하여
+객체를 생성하고 관리해 주기 때문에, 복잡한 객체 생성 로직을 사용하지 않아도 되었습니다. 
 
-이러한 경험을 통해 프로젝트 설계 단계 시 팀원들 간의 의견을 나누는 것과 코드를 병합 시키는 것은 기능 구현만큼
-매우 중요하다는 것을 깨달았고, 앞으로의 프로젝트에서는 적극적인 의견 교환을 할 것이라 다짐했습니다.
+프레임워크를 활용함으로써 더욱 효율적이고 편리한 개발이 가능해졌으며, 기능을 구현하는 데에만 집중할 수 있어 조원들의 
+업무 생산성이 Servlet/JSP 프로젝트에 비해 크게 향상되었습니다. 또한 API의 적극적인 활용으로 이미 구현된 고퀄리티의 기능을
+활용함으로써 개발 시간을 줄여주었고, 이용자 입장에서도 좋은 질의 서비스를 제공받는 것을 경험하고 나서
+모든 서비스를 개발자가 직접 구현하는 것이 좋은 것만은 아니라는 것을 느꼈습니다.
