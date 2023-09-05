@@ -74,7 +74,7 @@ Spring을 활용한 웹 프로젝트 구현
 - **커뮤니티** : 베스트 여행기, 소통해요
 - **Contact** : 고객센터
 - **마이페이지** : 여행후기, 회원정보 수정, 탈퇴<br>
-![드림저니 메인화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/dc45ddff-b0a6-4c5c-b969-d3cd8d79f5d9)
+https://user-images.githubusercontent.com/45139754/265741362-13c5b08a-f72e-4af0-a6af-1ab807687c98.png
 
 ### 2. 회원가입 ⬇️
 - 닉네임, 전화번호, 이메일 등 중복검사를 포함한 인증번호 유효성 검사를 통과해야만 가입된다.
