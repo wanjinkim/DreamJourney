@@ -55,7 +55,7 @@ Spring을 활용한 웹 프로젝트 구현
 계획을 세우는 기능을 제공함으로써 이용자에게 다양한 경험을 주는 것을 목표로 하였습니다.<br>
 
 ### 데이터 구조
-![드림저니구조](https://github.com/wanjinkim/DreamJourney/assets/45139754/7b8412d4-0faa-4e67-8223-80fbdb3a804c)
+![데이터구조](https://github.com/wanjinkim/DreamJourney/assets/45139754/50e01824-1769-47f0-9bd4-c393f65b8238)
 
 
 ### 담당업무
@@ -74,13 +74,13 @@ Spring을 활용한 웹 프로젝트 구현
 - **커뮤니티** : 베스트 여행기, 소통해요
 - **Contact** : 고객센터
 - **마이페이지** : 여행후기, 회원정보 수정, 탈퇴<br>
-https://user-images.githubusercontent.com/45139754/265741362-13c5b08a-f72e-4af0-a6af-1ab807687c98.png
+![메인회면](https://github.com/wanjinkim/DreamJourney/assets/45139754/13c5b08a-f72e-4af0-a6af-1ab807687c98)
 
 ### 2. 회원가입 ⬇️
 - 닉네임, 전화번호, 이메일 등 중복검사를 포함한 인증번호 유효성 검사를 통과해야만 가입된다.
 - 미성년자는 가입할 수 없다.
 - 가입시 입력한 이름과, 전화번호 인증하는 사람의 이름이 같아야 가입을 할 수 있다.<br><br>
-![회원가입 폼](https://github.com/wanjinkim/DreamJourney/assets/45139754/681ff172-7d1c-4e9e-8a00-6c661efcf007)
+![회원가입_폼](https://github.com/wanjinkim/DreamJourney/assets/45139754/6c8ecfe2-cd08-4955-97a4-1d56e2a092c6)
 
 
 
@@ -88,26 +88,27 @@ https://user-images.githubusercontent.com/45139754/265741362-13c5b08a-f72e-4af0-
 - 회원은 커뮤니티 게시판에 글을 등록, 조회, 수정, 삭제할 수 있다.
 - 댓글 작성자만이 본인의 댓글을 수정, 삭제 할 수 있다.
 - 동행 카테고리의 게시글에서는 채팅을 이용할 수 있다.<br><br>
-![커뮤니티_글목록_1](https://github.com/wanjinkim/DreamJourney/assets/45139754/0883cd96-795e-4c0f-902a-2c8d47903a63)
-![커뮤니티_글목록_2](https://github.com/wanjinkim/DreamJourney/assets/45139754/2cc3b2c9-f5de-465d-98e3-8e78448d5b4b)
-![커뮤니티_게시글_댓글목록](https://github.com/wanjinkim/DreamJourney/assets/45139754/367b6b75-a9d0-42e9-a3d9-ea7cb3f17153)
-![커뮤니티_동행채팅_회원1](https://github.com/wanjinkim/DreamJourney/assets/45139754/35191564-cc01-4e38-898c-00bd0ac0fce6)
+![커뮤니티_게시판](https://github.com/wanjinkim/DreamJourney/assets/45139754/f6f57e24-76b5-4fdf-8c71-7afc27022701)
+![댓글수정](https://github.com/wanjinkim/DreamJourney/assets/45139754/8d9cfdb6-3abc-4a5d-bb61-7beb81b7233d)
+![커뮤니티_동행채팅_회원1](https://github.com/wanjinkim/DreamJourney/assets/45139754/1c8001c1-40d9-4469-afbc-d124440ccc4e)
+
 
 
 ### 4. 결제 ⬇️
 - 원하는 액티비티를 선택한 후, 결제할 수 있다.<br><br>
-![액티비티](https://github.com/wanjinkim/DreamJourney/assets/45139754/012c0f6a-a7ed-4e16-9e89-c7da42393339)
-![액티비티_상세보기1](https://github.com/wanjinkim/DreamJourney/assets/45139754/039e35d0-80fb-4420-82e7-268ea6ad87bb)
-![액티비티_상세보기2](https://github.com/wanjinkim/DreamJourney/assets/45139754/d5ce0c12-4849-46e9-92e7-2758e4a47a5f)
-![결제](https://github.com/wanjinkim/DreamJourney/assets/45139754/128d0a56-53fa-4c48-af9b-d3c7303400bb)
-![결제 전체화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/de7c6e9a-f18d-47b2-97ca-bad025d6162e)
-![이니시스](https://github.com/wanjinkim/DreamJourney/assets/45139754/8ab55a76-8df4-41bf-b36a-c0487284c290)
-![결제완료](https://github.com/wanjinkim/DreamJourney/assets/45139754/57d4b6fb-215a-4972-b5c4-0b51b14b2d9e)
+![액티비티](https://github.com/wanjinkim/DreamJourney/assets/45139754/c3bddab5-b903-40d1-9c53-3172d1a61c34)
+![액티비티_상세보기1](https://github.com/wanjinkim/DreamJourney/assets/45139754/b9db9f67-1066-4132-8845-d5eaf0f19cac)
+![액티비티_상세보기2](https://github.com/wanjinkim/DreamJourney/assets/45139754/c4da2d93-f013-436e-a714-d4870ec0f1e9)
+![결제](https://github.com/wanjinkim/DreamJourney/assets/45139754/afdbdeb3-fe84-4eb0-9daa-67b76feb8520)
+![결제 전체화면](https://github.com/wanjinkim/DreamJourney/assets/45139754/3e6b5941-f3d9-4bf8-9f29-dd8f5e20baae)
+![이니시스](https://github.com/wanjinkim/DreamJourney/assets/45139754/d997e1ea-5bd1-4769-a1f4-01a1754d137d)
+![결제완료](https://github.com/wanjinkim/DreamJourney/assets/45139754/e5de6b14-5d0d-4e40-9763-78d57c5259ce)
 
 ### 5. 여행후기 작성
 - 위치와 코멘트를 추가해야만 작성을 완료할 수 있다.
-![마이페이지_내 여행_여행 등록 (4)](https://github.com/wanjinkim/DreamJourney/assets/45139754/3201c57b-104b-4c38-8f1e-50146853f27e)
-![마이페이지_내 여행](https://github.com/wanjinkim/DreamJourney/assets/45139754/ae7c4aad-108b-4e79-bd38-00c65cafdb4f)
+![마이페이지_내 여행_여행 등록 (4)](https://github.com/wanjinkim/DreamJourney/assets/45139754/ec6cd049-e426-4fc2-bbd0-f7e4acc393e6)
+![마이페이지_내 여행](https://github.com/wanjinkim/DreamJourney/assets/45139754/b33fc846-1c2e-4dd6-b55f-ac364562b51e)
+
 
 
 ---
